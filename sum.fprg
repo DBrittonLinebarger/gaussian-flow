@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Mommy"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2019-05-21 09:11:19 AM"/>
+        <attribute name="saved" value="2019-05-21 09:22:29 AM"/>
         <attribute name="created" value="TW9tbXk7QUlNRUUtTEFQVE9QOzIwMTktMDUtMjE7MDg6Mjk6NTEgQU07MjY2Mw=="/>
-        <attribute name="edited" value="TW9tbXk7QUlNRUUtTEFQVE9QOzIwMTktMDUtMjE7MDk6MTE6MTkgQU07MTsyNzY3"/>
+        <attribute name="edited" value="TW9tbXk7QUlNRUUtTEFQVE9QOzIwMTktMDUtMjE7MDk6MjI6MjkgQU07NDsyNzcz"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -18,11 +18,7 @@
                 <output expression="&quot; Please enter a value between 1 and 1000000.&quot;" newline="True"/>
                 <input variable="upperLimit"/>
             </while>
-            <assign variable="sum" expression="0"/>
-            <declare name="i" type="Integer" array="False" size=""/>
-            <for variable="i" start="1" end="upperLimit" direction="inc" step="1">
-                <assign variable="sum" expression="sum + i"/>
-            </for>
+            <assign variable="sum" expression="(upperLimit * (upperLimit +1))/2"/>
             <output expression="&quot; The sum of 1 to &quot; &amp; upperLimit &amp; &quot; is &quot; &amp; sum &amp; &quot;.&quot; &amp; &quot; Great job kiddo!&quot;" newline="True"/>
         </body>
     </function>
